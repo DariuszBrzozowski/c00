@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 void	ft_putnbr(int nb){
-	int digit;
-	char dig_char;
-	int magn_nb;
+	int	digit;
+	char	dig_char;
+	int	magn_nb;
 	
 	if (nb < 0)
 	{
@@ -11,7 +11,8 @@ void	ft_putnbr(int nb){
 		write(1, "-", 1);
 	}
 
-	if (nb >= 0 && nb <= 9){
+	if (nb >= 0 && nb <= 9)
+	{
 		dig_char = '0' + nb;
 		write(1, &dig_char, 1);
 	}
